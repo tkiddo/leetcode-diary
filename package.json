@@ -1,0 +1,23 @@
+{
+  "name": "leetcode-diary",
+  "version": "1.0.0",
+  "description": "刷题日记",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tkiddo/leetcode-diary.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tkiddo/leetcode-diary/issues"
+  },
+  "homepage": "https://github.com/tkiddo/leetcode-diary#readme",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
