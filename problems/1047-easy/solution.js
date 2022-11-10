@@ -39,20 +39,36 @@ const removeDuplicates = function (s) {
 const removeDuplicates2 = function (s) {
   let result = s[0]
   const len = s.length
-  let index = 0
   for (let i = 1; i < len; i++) {
-    if (s[i] !== result[index]) {
+    if (s[i] !== result[result.length - 1]) {
       result += s[i]
-      index++
     } else {
       result = result.slice(0, result.length - 1)
-      index--
     }
   }
   return result
 }
 
+/**最优解：使用for of遍历，数据结构栈 */
+
+/**
+ * @param {string} s
+ * @return {string}
+ */
+const removeDuplicates3 = function (s) {
+  const result = []
+  for (const char of s) {
+    if (result.length < 1 || result[result.length - 1] !== char) {
+      result.push(char)
+    } else {
+      result.pop()
+    }
+  }
+  return result.join('')
+}
+
 module.exports = {
   removeDuplicates,
   removeDuplicates2,
+  removeDuplicates3,
 }

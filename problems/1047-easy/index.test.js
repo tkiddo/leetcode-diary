@@ -1,4 +1,8 @@
-const { removeDuplicates, removeDuplicates2 } = require('./solution')
+const {
+  removeDuplicates,
+  removeDuplicates2,
+  removeDuplicates3,
+} = require('./solution')
 
 describe('removeDuplicates', () => {
   test('removeDuplicates params aa', () => {
@@ -21,5 +25,17 @@ describe('removeDuplicates2', () => {
   test('removeDuplicates2 params abbaca', () => {
     const s = 'abbaca'
     expect(removeDuplicates2(s)).toBe('ca')
+  })
+})
+
+describe('removeDuplicates3', () => {
+  test('removeDuplicates3 params aa', () => {
+    const s = 'aa'
+    expect(removeDuplicates3(s)).toBe('')
+  })
+
+  test('removeDuplicates3 params abbaca', () => {
+    const s = 'abbaca'
+    expect(removeDuplicates3(s)).toBe('ca')
   })
 })
