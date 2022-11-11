@@ -31,8 +31,7 @@ const removeDuplicates2 = function (nums) {
   let p = 0
   let q = p + 1
   while (q < nums.length) {
-    if (nums[p] === nums[q]) {
-    } else {
+    if (nums[p] !== nums[q]) {
       nums[p + 1] = nums[q]
       p++
     }
