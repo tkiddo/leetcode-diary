@@ -23,6 +23,24 @@ const maxProfit = function (prices) {
   return profit
 }
 
+/** 官方题解：
+ * 贪心算法：每次都选择最优解
+ */
+/**
+ * @param {number[]} prices
+ * @return {number}
+ */
+const maxProfit2 = function (prices) {
+  let profit = 0
+  for (let i = 0; i < prices.length; i++) {
+    if (prices[i + 1] > prices[i]) {
+      profit += prices[i + 1] - prices[i]
+    }
+  }
+  return profit
+}
+
 module.exports = {
   maxProfit,
+  maxProfit2,
 }
