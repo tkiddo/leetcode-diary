@@ -15,3 +15,9 @@
 ---
 
 217. Contains Duplicate
+
+## 2022-11-15
+
+136. Single Number
+
+需要了解位运算
