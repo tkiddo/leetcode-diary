@@ -25,3 +25,7 @@
 ## 2022-11-16
 
 350. Intersection of Two Arrays II
+
+## 2022-11-17
+
+66. Plus One
