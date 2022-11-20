@@ -10,6 +10,9 @@
 const plusOne = function (digits) {
   const result = digits
   result[result.length - 1]++
+  if (result[result.length - 1] < 10) {
+    return result
+  }
   for (let i = result.length - 1; i >= 0; i--) {
     if (result[i] > 9) {
       result[i] = 0
