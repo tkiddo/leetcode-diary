@@ -49,3 +49,7 @@
 ---
 
 7. Reverse Integer
+
+---
+
+387. First Unique Character in a String
