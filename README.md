@@ -57,3 +57,9 @@
 ## 2022-11-25
 
 125. Valid Palindrome
+
+## 2022-11-27
+
+28. Find the Index of the First Occurrence in a String
+
+**更优解法待补充**
