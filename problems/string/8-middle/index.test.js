@@ -19,7 +19,7 @@ describe('myAtoi', () => {
   it('should return 0', () => {
     expect(myAtoi('+-2')).toBe(0)
   })
-  it('should return 0', () => {
+  it('should return 3', () => {
     expect(myAtoi('3.14159')).toBe(3)
   })
   it('should return 0', () => {
