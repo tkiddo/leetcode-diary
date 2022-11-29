@@ -63,3 +63,14 @@
 28. Find the Index of the First Occurrence in a String
 
 **更优解法待补充**
+
+## 2022-11-28
+
+8. String to Integer (atoi)
+
+**有限状态自动机算法补充**
+
+## 2022-11-29
+
+14. Longest Common Prefix
+    暴力解法
