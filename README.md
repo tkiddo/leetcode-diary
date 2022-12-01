@@ -74,3 +74,9 @@
 
 14. Longest Common Prefix
     暴力解法
+
+## 2022-12-01
+
+deleteNode
+
+removeNthFromEnd
