@@ -23,11 +23,40 @@ const removeNthFromEnd = function (head, n) {
     len++
     current = current.next
   }
+  if (len === n) {
+    if (head.next) {
+      return head.next
+    } else {
+      return null
+    }
+  }
   indexHash[len - n].next = indexHash[len - n].next.next
+  return head
+}
+
+const removeNthFromEnd2 = function (head, n) {
+  let index = 1
+  let slow = head
+  let fast = head.next
+  if (!fast && n === 1) {
+    return null
+  }
+  while (fast.next) {
+    fast = fast.next
+    index++
+    if (index > n) {
+      slow = slow.next
+    }
+  }
+  if (index === n) {
+    return head.next
+  }
+  slow.next = slow.next.next
   return head
 }
 
 module.exports = {
   ListNode,
   removeNthFromEnd,
+  removeNthFromEnd2,
 }
