@@ -36,14 +36,11 @@ const removeNthFromEnd = function (head, n) {
 
 const removeNthFromEnd2 = function (head, n) {
   let index = 1
-  let slow = head
-  let fast = head.next
-  if (!fast && n === 1) {
-    return null
-  }
+  let slow = new ListNode(undefined, head)
+  let fast = head
   while (fast.next) {
-    fast = fast.next
     index++
+    fast = fast.next
     if (index > n) {
       slow = slow.next
     }
