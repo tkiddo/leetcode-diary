@@ -68,7 +68,7 @@
 
 8. String to Integer (atoi)
 
-**有限状态自动机算法补充**
+**有限状态自动机算法补充(已完成)**
 
 ## 2022-11-29
 
@@ -80,3 +80,7 @@
 deleteNode
 
 removeNthFromEnd
+
+## 2022-12-03
+
+reverseList
