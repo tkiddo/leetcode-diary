@@ -34,6 +34,13 @@ const removeNthFromEnd = function (head, n) {
   return head
 }
 
+/**
+ * 官方题解：双指针
+ * @param {} head
+ * @param {*} n
+ * @returns
+ */
+
 const removeNthFromEnd2 = function (head, n) {
   let index = 1
   let slow = new ListNode(undefined, head)
@@ -55,5 +62,5 @@ const removeNthFromEnd2 = function (head, n) {
 module.exports = {
   ListNode,
   removeNthFromEnd,
-  removeNthFromEnd2,
+  removeNthFromEnd2
 }

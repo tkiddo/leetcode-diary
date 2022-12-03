@@ -7,7 +7,7 @@
  * @param {string[]} strs
  * @return {string}
  */
-const longestCommonPrefix = function (strs) {
+const longestCommonPrefix2 = function (strs) {
   let i = 0
   const result = []
   while (true) {
@@ -33,6 +33,38 @@ const longestCommonPrefix = function (strs) {
   }
   return result.join('')
 }
+
+/**
+ * 纵向比较
+ * @param {} strs
+ * @returns
+ */
+const longestCommonPrefix3 = function (strs) {
+  let result = []
+  let i = 0
+  let isEnd = false
+  while (!isEnd) {
+    for (let j = 0; j < strs.length; j++) {
+      if (!strs[j][i]) {
+        result[i] = ''
+        isEnd = true
+        break
+      } else {
+        if (!result[i]) {
+          result[i] = strs[j][i]
+        } else if (result[i] !== strs[j][i]) {
+          result[i] = ''
+          isEnd = true
+          break
+        }
+      }
+    }
+    i++
+  }
+  return result.join('')
+}
+
+const longestCommonPrefix = function (strs) {}
 
 module.exports = {
   longestCommonPrefix
