@@ -39,7 +39,7 @@ const longestCommonPrefix2 = function (strs) {
  * @param {} strs
  * @returns
  */
-const longestCommonPrefix3 = function (strs) {
+const longestCommonPrefix = function (strs) {
   let result = []
   let i = 0
   let isEnd = false
@@ -64,7 +64,7 @@ const longestCommonPrefix3 = function (strs) {
   return result.join('')
 }
 
-const longestCommonPrefix = function (strs) {}
+const longestCommonPrefix3 = function (strs) {}
 
 module.exports = {
   longestCommonPrefix

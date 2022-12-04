@@ -84,3 +84,7 @@ removeNthFromEnd
 ## 2022-12-03
 
 reverseList
+
+## 2022-12-04
+
+mergeTwoLists
