@@ -90,3 +90,7 @@ reverseList
 ## 2022-12-04
 
 mergeTwoLists
+
+## 2022-12-05
+
+isPalindrome
