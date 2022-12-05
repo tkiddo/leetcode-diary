@@ -75,6 +75,8 @@
 14. Longest Common Prefix
     暴力解法
 
+    **更优解法待补充**
+
 ## 2022-12-01
 
 deleteNode
