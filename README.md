@@ -96,3 +96,5 @@ mergeTwoLists
 isPalindrome
 
 ## 2022-12-06
+
+hasCycle
