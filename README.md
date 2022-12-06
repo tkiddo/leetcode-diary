@@ -94,3 +94,5 @@ mergeTwoLists
 ## 2022-12-05
 
 isPalindrome
+
+## 2022-12-06
