@@ -39,7 +39,7 @@ const longestCommonPrefix2 = function (strs) {
  * @param {} strs
  * @returns
  */
-const longestCommonPrefix = function (strs) {
+const longestCommonPrefix3 = function (strs) {
   let result = []
   let i = 0
   let isEnd = false
@@ -64,8 +64,26 @@ const longestCommonPrefix = function (strs) {
   return result.join('')
 }
 
-const longestCommonPrefix3 = function (strs) {}
+/**
+ * 更优解法：
+ * 把第一个字符串当成公共字符串，依次和后一个匹配，更新公共字符串
+ * @param {*} strs
+ * @returns
+ */
+
+const longestCommonPrefix = function (strs) {
+  let common = strs[0]
+  for (let i = 1; i < strs.length; i++) {
+    for (let j = 0; j < common.length; j++) {
+      if (strs[i][j] !== common[j]) {
+        common = common.substr(0, j)
+        break
+      }
+    }
+  }
+  return common
+}
 
 module.exports = {
-  longestCommonPrefix
+  longestCommonPrefix,
 }
