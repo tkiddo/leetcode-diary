@@ -6,8 +6,20 @@
  * }
  */
 
+  function ListNode(val) {
+      this.val = val;
+      this.next = null;
+  }
+
 /**
  * @param {ListNode} head
  * @return {boolean}
  */
-var hasCycle = function (head) {}
+const hasCycle = function (head) {
+  
+}
+
+module.exports = {
+  ListNode,
+  hasCycle
+}
