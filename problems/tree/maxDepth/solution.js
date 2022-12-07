@@ -13,12 +13,24 @@ function TreeNode(val, left, right) {
   this.right = right === undefined ? null : right
 }
 /**
+ * 我的解法：
+ * 递归比较左右两边的深度，最大的深度累加
+ */
+/**
  * @param {TreeNode} root
  * @return {number}
  */
-const maxDepth = function (root) {}
+const maxDepth = function (root) {
+  if (!root) {
+    return 0
+  }
+  const leftDepth = maxDepth(root.left)
+  const rightDepth = maxDepth(root.right)
+  const max = leftDepth > rightDepth ? leftDepth : rightDepth
+  return 1 + max
+}
 
-module.exports={
+module.exports = {
   TreeNode,
-  maxDepth
+  maxDepth,
 }

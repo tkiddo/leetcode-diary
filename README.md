@@ -100,3 +100,5 @@ isPalindrome
 hasCycle
 
 ## 2022-12-07
+
+maxDepth
