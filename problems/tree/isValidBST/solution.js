@@ -35,8 +35,50 @@ const isValidBST2 = function (root) {
   return result && left && right
 }
 
+/**
+ * 官方解法：
+ * 递归判断左右子树是否满足条件，同时传入最大值和最小值，判断当前节点是否满足条件
+ * @param {*} root
+ * @returns
+ */
+
+const isValidBST3 = function (root) {
+  const helper = (node, min, max) => {
+    if (!node) {
+      return true
+    }
+    if (node.val <= min || node.val >= max) {
+      return false
+    }
+    return helper(node.left, min, node.val) && helper(node.right, node.val, max)
+  }
+  return helper(root, -Infinity, Infinity)
+}
+
+/**
+ * 官方解法：
+ * 中序遍历，判断当前节点是否大于上一个节点
+ * @param {*} root
+ * @returns
+ */
 const isValidBST = function (root) {
-  const loop = (node) => {}
+  let current = null
+  const loop = (node) => {
+    if (!node) {
+      return true
+    }
+    if (!loop(node.left)) {
+      return false
+    }
+    if (current && node.val <= current.val) {
+      return false
+    }
+    current = node
+    if (!loop(node.right)) {
+      return false
+    }
+    return true
+  }
   return loop(root)
 }
 
