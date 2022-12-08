@@ -4,7 +4,8 @@
   "description": "刷题日记",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test:all": "jest",
+    "test": "jest problems/tree/isValidBST/index.test.js"
   },
   "repository": {
     "type": "git",
