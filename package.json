@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:all": "jest",
-    "test": "jest problems/tree/isValidBST/index.test.js"
+    "test": "jest problems/tree/traversal/index.test.js"
   },
   "repository": {
     "type": "git",
