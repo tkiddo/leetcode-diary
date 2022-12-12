@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:all": "jest",
-    "test": "jest problems/sort/merge/index.test.js"
+    "test": "jest problems/sort/sorter/index.test.js"
   },
   "repository": {
     "type": "git",
