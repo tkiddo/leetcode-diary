@@ -102,3 +102,9 @@ hasCycle
 ## 2022-12-07
 
 maxDepth
+
+## 2022-12-12
+
+merge
+
+isSymmetric (递归) not fixed
