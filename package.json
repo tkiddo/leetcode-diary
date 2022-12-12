@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:all": "jest",
-    "test": "jest problems/tree/levelOrder/index.test.js"
+    "test": "jest problems/tree/isSymmetric/index.test.js"
   },
   "repository": {
     "type": "git",

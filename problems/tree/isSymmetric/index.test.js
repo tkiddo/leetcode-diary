@@ -1,6 +1,6 @@
 const { TreeNode, isSymmetric } = require('./solution')
 
-describe.skip('isSymmetric', () => {
+describe('isSymmetric', () => {
   it('should return true if the tree is symmetric', () => {
     const tree = new TreeNode(
       1,
@@ -14,6 +14,15 @@ describe.skip('isSymmetric', () => {
       1,
       new TreeNode(2, new TreeNode(3), new TreeNode(4)),
       new TreeNode(2, new TreeNode(4), new TreeNode(5))
+    )
+    expect(isSymmetric(tree)).toBe(false)
+  })
+  // [1,2,2,2,null,2]
+  it('should return false if the tree is not symmetric', () => {
+    const tree = new TreeNode(
+      1,
+      new TreeNode(2, new TreeNode(2), null),
+      new TreeNode(2, null, new TreeNode(2))
     )
     expect(isSymmetric(tree)).toBe(false)
   })
