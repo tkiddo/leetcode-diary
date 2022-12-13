@@ -30,7 +30,42 @@ function selectionSort(nums) {
   return nums
 }
 
+// 归并排序
+// 时间复杂度：O(nlogn)
+function mergeSort(nums) {
+  const merge = (arr1, arr2) => {
+    let index1 = 0,
+      index2 = 0,
+      result = []
+    while (index1 < arr1.length && index2 < arr2.length) {
+      if (arr1[index1] < arr2[index2]) {
+        result.push(arr1[index1++])
+      } else {
+        result.push(arr2[index2++])
+      }
+    }
+    while (index1 < arr1.length) {
+      result.push(arr1[index1++])
+    }
+    while (index2 < arr2.length) {
+      result.push(arr2[index2++])
+    }
+    return result
+  }
+  const split = (arr) => {
+    if (arr.length <= 1) {
+      return arr
+    }
+    const mid = Math.floor(arr.length / 2)
+    const left = arr.slice(0, mid)
+    const right = arr.slice(mid, arr.length)
+    return merge(split(left), split(right))
+  }
+  return split(nums)
+}
+
 module.exports = {
   bubbleSort,
   selectionSort,
+  mergeSort,
 }
