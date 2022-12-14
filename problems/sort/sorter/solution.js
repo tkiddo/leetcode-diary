@@ -64,6 +64,9 @@ function mergeSort(nums) {
   return split(nums)
 }
 
+// 快速排序
+// 时间复杂度：O(nlogn)
+// 使用辅助数组
 function quickSort(arr) {
   if (arr.length <= 1) {
     return arr
