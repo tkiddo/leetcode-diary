@@ -84,9 +84,35 @@ function quickSort(arr) {
   return [...quickSort(left), base, ...quickSort(right)]
 }
 
+// 插入排序
+// 时间复杂度：O(n^2)
+function insertSort(nums) {
+  if (nums.length <= 1) {
+    return nums
+  }
+  for (let i = 1; i < nums.length; i++) {
+    const current = nums[i]
+    let j = i - 1
+    while (j >= 0) {
+      if (current < nums[j]) {
+        nums[j + 1] = nums[j]
+      } else {
+        nums[j + 1] = current
+        break
+      }
+      j--
+    }
+    if (j < 0) {
+      nums[j + 1] = current
+    }
+  }
+  return nums
+}
+
 module.exports = {
   bubbleSort,
   selectionSort,
   mergeSort,
   quickSort,
+  insertSort,
 }
