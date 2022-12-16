@@ -4,6 +4,7 @@ const {
   mergeSort,
   quickSort,
   insertSort,
+  countingSort,
 } = require('./solution')
 
 describe('bubbleSort', () => {
@@ -34,9 +35,16 @@ describe('quickSort', () => {
   })
 })
 
-describe.only('insertSort', () => {
+describe('insertSort', () => {
   it('should return sorted array', () => {
     const nums = [2, 3, 0, 4, 1, 6, 9, 10, 8, 7, 5]
     expect(insertSort(nums)).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
+  })
+})
+
+describe.only('insertSort', () => {
+  it('should return sorted array', () => {
+    const nums = [2, 3, 0, 4, 1, 6, 9, 10, 8, 7, 5]
+    expect(countingSort(nums)).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
   })
 })

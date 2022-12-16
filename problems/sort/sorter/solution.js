@@ -102,10 +102,29 @@ function insertSort(nums) {
   return nums
 }
 
+function countingSort(nums) {
+  const countArr = []
+  const result = []
+  for (let i = 0; i < nums.length; i++) {
+    if (!countArr[nums[i]]) {
+      countArr[nums[i]] = 0
+    }
+    countArr[nums[i]]++
+  }
+  for (let i = 0; i < countArr.length; i++) {
+    while (countArr[i] > 0) {
+      result.push(i)
+      countArr[i]--
+    }
+  }
+  return result
+}
+
 module.exports = {
   bubbleSort,
   selectionSort,
   mergeSort,
   quickSort,
   insertSort,
+  countingSort,
 }
