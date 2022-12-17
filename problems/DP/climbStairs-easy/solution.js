@@ -1,29 +1,43 @@
 /**
+ * 递归法，会重复计算
+ */
+/**
  * @param {number} n
  * @return {number}
  */
-const climbStairs = function (n) {
-  const loop = (a) => {
-    if (a === 1) {
-      return {
-        1: 1,
-        2: 0,
-      }
-    }
-    if (a === 2) {
-      return {
-        1: 1,
-        2: 1,
-      }
-    }
-    return {
-      1: loop(a - 1)['1'] + loop(a - 1)['2'],
-      2: loop(a - 1)['1'] + loop(a - 1)['2'],
-    }
+const climbStairs2 = function (n) {
+  if (n === 1) {
+    return 1
   }
-  return loop(n)['1'] + loop(n)['2']
+  if (n === 2) {
+    return 2
+  }
+  return climbStairs(n - 1) + climbStairs(n - 2)
+}
+
+/**
+ * 保存当前最后两个计算结果，为下一个做准备，不用每次重新计算
+ * @param {} n
+ * @returns
+ */
+const climbStairs = function (n) {
+  if (n === 1) {
+    return 1
+  }
+  if (n === 2) {
+    return 2
+  }
+  let a = 1,
+    b = 2
+  let result = 0
+  for (let i = 2; i < n; i++) {
+    result = a + b
+    a = b
+    b = result
+  }
+  return result
 }
 
 module.exports = {
-  climbStairs,
+  climbStairs
 }
