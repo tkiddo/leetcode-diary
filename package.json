@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:all": "jest",
-    "test": "jest problems/math/isPowerOfThree-easy/index.test.js"
+    "test": "jest problems/string/replaceSpace-easy/index.test.js"
   },
   "repository": {
     "type": "git",
