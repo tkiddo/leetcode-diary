@@ -12,7 +12,7 @@ const minArray = function (numbers) {
     } else if (numbers[m] < numbers[r]) {
       r = m
     } else {
-      l--
+      r--
     }
   }
   return numbers[l]
