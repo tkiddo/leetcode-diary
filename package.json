@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:all": "jest",
-    "test": "jest problems/array/minArray-easy/index.test.js"
+    "test": "jest problems/array/minStack-easy/index.test.js"
   },
   "repository": {
     "type": "git",
