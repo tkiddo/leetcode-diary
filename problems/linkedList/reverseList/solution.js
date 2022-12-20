@@ -8,7 +8,7 @@ function ListNode(val, next) {
  * @param {ListNode} head
  * @return {ListNode}
  */
-const reverseList = function (head) {
+const reverseList2 = function (head) {
   if (!head) {
     return head
   }
@@ -32,6 +32,18 @@ const reverseList = function (head) {
     current = temp
   }
   return currentHead
+}
+
+const reverseList = function (head) {
+  const reverse = (current, prev) => {
+    if (!current) {
+      return prev
+    }
+    const next = current.next
+    current.next = prev
+    return reverse(next, current)
+  }
+  return reverse(head, null)
 }
 
 module.exports = {
