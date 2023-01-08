@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test:all": "jest",
-    "test": "jest problems/tree/lowestCommonAncestor-easy/index.test.js"
+    "test": "jest problems/search/sortedSearch-easy/index.test.js",
+    "dev": "node problems/DP/translateNum-middle/solution.js"
   },
   "repository": {
     "type": "git",
