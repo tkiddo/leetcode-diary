@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:all": "jest",
-    "test": "jest problems/tree/lowestCommonAncestor-easy/index.test.js"
+    "test": "jest problems/linkedList/addTwoNumbers-middle/index.test.js"
   },
   "repository": {
     "type": "git",
