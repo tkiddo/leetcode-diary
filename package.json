@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:all": "jest",
-    "test": "jest problems/array/majorityElement-easy/index.test.js"
+    "test": "jest problems/math/addDigits-easy/index.test.js"
   },
   "repository": {
     "type": "git",
