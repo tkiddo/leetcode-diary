@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:all": "jest",
-    "test": "jest problems/linkedList/addTwoNumbers-middle/index.test.js"
+    "test": "jest problems/string/lengthOfLongestSubstring-middle/index.test.js"
   },
   "repository": {
     "type": "git",
