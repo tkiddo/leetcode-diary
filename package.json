@@ -4,8 +4,7 @@
   "description": "刷题日记",
   "main": "index.js",
   "scripts": {
-    "test:all": "jest",
-    "test": "jest problems/tree/isSameTree-easy/index.test.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
