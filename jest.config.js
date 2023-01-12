@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/tree/minDepth-easy'],
+  roots: ['<rootDir>/problems/tree/hasPathSum-easy'],
 }
