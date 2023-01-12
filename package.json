@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test:all": "jest",
-    "test": "jest problems/array/validateStackSequences-middle/index.test.js"
+    "test": "jest problems/string/isNumber-middle/index.test.js"
   },
   "repository": {
     "type": "git",
