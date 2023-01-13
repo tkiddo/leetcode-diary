@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/tree/hasPathSum-easy'],
+  roots: ['<rootDir>/problems/tree/invertTree-easy'],
 }
