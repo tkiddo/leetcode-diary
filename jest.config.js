@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/tree/binaryTreePaths-easy'],
+  roots: ['<rootDir>/problems/tree/sumOfLeftLeaves-easy'],
 }
