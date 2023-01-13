@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/tree/diameterOfBinaryTree-easy'],
+  roots: ['<rootDir>/problems/tree/isSubTree-easy'],
 }
