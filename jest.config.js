@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/array/findDisappearedNumbers-easy'],
+  roots: ['<rootDir>/problems/string/longestPalindrome-middle'],
 }
