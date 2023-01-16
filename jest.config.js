@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/linkedList/hasCycle-easy'],
+  roots: ['<rootDir>/problems/linkedList/getIntersectionNode-easy'],
 }
