@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/string/isValid-easy'],
+  roots: ['<rootDir>/problems/linkedList/hasCycle-easy'],
 }
