@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/tree/findTarget-easy'],
+  roots: ['<rootDir>/problems/tree/findSecondMinimumValue-easy'],
 }
