@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/tree/findSecondMinimumValue-easy'],
+  roots: ['<rootDir>/problems/string/isValid-easy'],
 }
