@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/string/longestPalindrome-middle'],
+  roots: ['<rootDir>/problems/array/permute-middle'],
 }
