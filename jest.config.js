@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/array/permute-middle'],
+  roots: ['<rootDir>/problems/DP/generateParenthesis-middle'],
 }
