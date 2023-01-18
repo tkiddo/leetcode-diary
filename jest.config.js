@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/DP/generateParenthesis-middle'],
+  roots: ['<rootDir>/problems/tree/convertBST-middle'],
 }
