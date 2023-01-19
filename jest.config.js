@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/tree/flatten-middle'],
+  roots: ['<rootDir>/problems/backtracking/combinationSum-middle'],
 }
