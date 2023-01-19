@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/tree/convertBST-middle'],
+  roots: ['<rootDir>/problems/tree/flatten-middle'],
 }
