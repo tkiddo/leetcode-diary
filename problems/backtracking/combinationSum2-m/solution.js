@@ -10,6 +10,7 @@ var combinationSum2 = function (candidates, target) {
   const dfs = (list, rest, index) => {
     if (rest === 0) {
       result.push([...path])
+      return
     }
     for (let i = index; i < list.length; i++) {
       if (i > index && list[i] === list[i - 1]) {

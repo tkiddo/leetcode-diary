@@ -1,3 +1,3 @@
 module.exports = {
-  roots: ['<rootDir>/problems/backtracking/combinationSum2-m'],
+  roots: ['<rootDir>/problems/backtracking/permuteUnique-m'],
 }
