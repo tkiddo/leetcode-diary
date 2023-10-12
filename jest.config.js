@@ -1,4 +1,4 @@
 module.exports = {
-  roots: ['<rootDir>/problems/backtracking/combine-m'],
+  roots: ['<rootDir>/round-2nd/findTheArrayConcVal-easy'],
   moduleDirectories: ['node_modules', 'utils'],
 }
