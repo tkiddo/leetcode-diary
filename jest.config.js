@@ -1,4 +1,4 @@
 module.exports = {
-  roots: ['<rootDir>/round-2nd/isUnique-easy'],
+  roots: ['<rootDir>/round-2nd/CheckPermutation-easy'],
   moduleDirectories: ['node_modules', 'utils'],
 }
