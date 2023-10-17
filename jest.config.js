@@ -1,4 +1,4 @@
 module.exports = {
-  roots: ['<rootDir>/round-2nd/sumOfMultiples-e'],
+  roots: ['<rootDir>/round-2nd/canPermutePalindrome-e'],
   moduleDirectories: ['node_modules', 'utils'],
 }
