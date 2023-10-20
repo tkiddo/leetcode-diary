@@ -1,4 +1,4 @@
 module.exports = {
-  roots: ['<rootDir>/round-2nd/tupleSameProduct-m'],
+  roots: ['<rootDir>/round-2nd/setZeroes-m'],
   moduleDirectories: ['node_modules', 'utils'],
 }
