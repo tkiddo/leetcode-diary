@@ -1,4 +1,4 @@
 module.exports = {
-  roots: ['<rootDir>/round-2nd/isFlipedString-e'],
+  roots: ['<rootDir>/round-2nd/removeDuplicateNodes-e'],
   moduleDirectories: ['node_modules', 'utils'],
 }
