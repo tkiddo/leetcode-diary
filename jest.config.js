@@ -1,4 +1,4 @@
 module.exports = {
-  roots: ['<rootDir>/round-2nd/mergeTwoLists-e'],
+  roots: ['<rootDir>/round-2nd/reverseList-e'],
   moduleDirectories: ['node_modules', 'utils'],
 }
