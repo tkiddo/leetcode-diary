@@ -7,6 +7,16 @@ const hasSameElements = (arr1, arr2) => {
   })
 }
 
+const list2Array = (list) => {
+  const result = []
+  while (list) {
+    result.push(list.val)
+    list = list.next
+  }
+  return result
+}
+
 module.exports = {
   hasSameElements,
+  list2Array,
 }
